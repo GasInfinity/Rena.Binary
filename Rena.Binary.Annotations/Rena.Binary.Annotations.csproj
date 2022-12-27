@@ -14,6 +14,7 @@
     <Description>Annotations of Rena.Binary</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/GasInfinity/Rena.Binary</RepositoryUrl>
   </PropertyGroup>

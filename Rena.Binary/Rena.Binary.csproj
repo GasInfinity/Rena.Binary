@@ -13,6 +13,7 @@
     <Description>A binary serializer/deserializer focused on structured data and high performance</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/GasInfinity/Rena.Binary</RepositoryUrl>
   </PropertyGroup>
