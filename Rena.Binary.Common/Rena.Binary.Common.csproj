@@ -14,7 +14,6 @@
     <Authors>GasInfinity</Authors>
     <Description>Common types of Rena.Binary</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/GasInfinity/Rena.Binary</RepositoryUrl>
@@ -22,7 +21,6 @@
 
   <ItemGroup Label="Extra files">
     <None Include="../README.md" Pack="true" PackagePath="/" />
-    <None Include="../LICENSE" Pack="true" PackagePath="/" />
     <None Include="../assets/logo.png" Pack="true" PackagePath="/" />
   </ItemGroup>
 </Project>
