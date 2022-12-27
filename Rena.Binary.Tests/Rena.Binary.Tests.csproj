@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+  </PropertyGroup>
+
+  <ItemGroup Label="Local dependencies">
+    <ProjectReference Include="..\Rena.Binary\Rena.Binary.csproj" />
+    <ProjectReference Include="..\Rena.Binary.Common\Rena.Binary.Common.csproj" />
+    <ProjectReference Include="..\Rena.Binary.Annotations\Rena.Binary.Annotations.csproj" />
+    <ProjectReference Include="..\Rena.Binary.SourceGenerator\Rena.Binary.SourceGenerator.csproj"
+      PrivateAssets="all" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+  <ItemGroup Label="Nuget dependencies">
+    <PackageReference Include="NUnit" Version="3.13.3" />
+  </ItemGroup>
+</Project>

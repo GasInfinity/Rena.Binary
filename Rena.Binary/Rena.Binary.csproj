@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Rena.Binary</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Nuget">
+    <PackageId>Rena.Binary</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>GasInfinity</Authors>
+    <Description>A binary serializer/deserializer focused on structured data and high performance</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>logo.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup Label="Local dependencies">
+    <ProjectReference Include="..\Rena.Binary.Common\Rena.Binary.Common.csproj" />
+    <ProjectReference Include="..\Rena.Binary.Annotations\Rena.Binary.Annotations.csproj" />
+    <ProjectReference Include="..\Rena.Binary.SourceGenerator\Rena.Binary.SourceGenerator.csproj"
+      OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+  <ItemGroup Label="Extra files">
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+    <None Include="../LICENSE" Pack="true" PackagePath="/" />
+    <None Include="../assets/logo.png" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>

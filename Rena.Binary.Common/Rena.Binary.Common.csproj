@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <LangVersion>Latest</LangVersion>
+    <RootNamespace>Rena.Binary.Common</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Nuget">
+    <PackageId>Rena.Binary.Common</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>GasInfinity</Authors>
+    <Description>Common types of Rena.Binary</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>logo.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup Label="Extra files">
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+    <None Include="../LICENSE" Pack="true" PackagePath="/" />
+    <None Include="../assets/logo.png" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>

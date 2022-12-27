@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <LangVersion>Latest</LangVersion>
+    <RootNamespace>Rena.Binary.SourceGenerator</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Nuget">
+    <PackageId>Rena.Binary.SourceGenerator</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>GasInfinity</Authors>
+    <Description>Source generator of Rena.Binary</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>logo.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup Label="Nuget dependencies">
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.4.0" PrivateAssets="all" />
+  </ItemGroup>
+
+  <!-- Broken local dependencies in source generators... -->
+  <ItemGroup Label="Local dependencies">
+    <Compile Include="../Rena.Binary.Common/**/*.cs" Link="Rena.Binary.Common" />
+    <Compile Remove="../Rena.Binary.Common/obj/**/*.cs" />
+
+    <Compile Include="../Rena.Binary.Annotations/**/*.cs" Link="Rena.Binary.Annotations" />
+    <Compile Remove="../Rena.Binary.Annotations/obj/**/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs"
+      Visible="false" />
+  </ItemGroup>
+
+  <ItemGroup Label="Extra files">
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+    <None Include="../LICENSE" Pack="true" PackagePath="/" />
+    <None Include="../assets/logo.png" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>
