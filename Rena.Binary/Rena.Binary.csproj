@@ -20,8 +20,7 @@
   <ItemGroup Label="Local dependencies">
     <ProjectReference Include="..\Rena.Binary.Common\Rena.Binary.Common.csproj" />
     <ProjectReference Include="..\Rena.Binary.Annotations\Rena.Binary.Annotations.csproj" />
-    <ProjectReference Include="..\Rena.Binary.SourceGenerator\Rena.Binary.SourceGenerator.csproj"
-      OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\Rena.Binary.SourceGenerator\Rena.Binary.SourceGenerator.csproj" />
   </ItemGroup>
 
   <ItemGroup Label="Extra files">
