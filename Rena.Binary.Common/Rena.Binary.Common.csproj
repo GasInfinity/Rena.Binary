@@ -10,12 +10,13 @@
 
   <PropertyGroup Label="Nuget">
     <PackageId>Rena.Binary.Common</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.1.1</Version>
     <Authors>GasInfinity</Authors>
     <Description>Common types of Rena.Binary</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIcon>logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/GasInfinity/Rena.Binary</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup Label="Extra files">
