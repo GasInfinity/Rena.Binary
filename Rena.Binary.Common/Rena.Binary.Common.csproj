@@ -10,7 +10,7 @@
 
   <PropertyGroup Label="Nuget">
     <PackageId>Rena.Binary.Common</PackageId>
-    <Version>1.0.1.2</Version>
+    <Version>1.0.1.3</Version>
     <Authors>GasInfinity</Authors>
     <Description>Common types of Rena.Binary</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
